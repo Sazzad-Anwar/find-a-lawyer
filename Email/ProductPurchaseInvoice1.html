@@ -1,0 +1,328 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>HTML Email Template Project</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        p {
+            font-size: 15px;
+            color: black !important;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /* .bordered-table tr td{
+            border-spacing: 0;
+            border: 1px solid #d8d8d8;
+            padding: 1rem 1rem;
+            word-break: break-all;
+        } */
+
+        .footer {
+            padding: 20px 0 20px 0;
+        }
+
+        @media screen and (max-width: 599.98px) {
+            .footer {
+                padding: 0px 0 0px 0;
+            }
+
+            .footer p {
+                font-size: 10px;
+                padding: .5rem 1rem !important;
+                word-break: break-all;
+            }
+        }
+
+        @media screen and (max-width: 399.98px) {
+            .footer {
+                padding: 0px 0 0px 0;
+            }
+
+            .footer p {
+                font-size: 10px;
+                padding: .5rem 1rem !important;
+                word-break: break-all;
+            }
+
+            /* .footer p.call-us {
+                font-size: 10px;
+                padding: .5rem .5rem !important;
+                margin: 1rem .1rem 1rem 1rem !important;
+            } */
+        }
+
+        /* Custom Dark Mode Colors */
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            /* body, center, table, p{
+                background-color:#2d2d2d !important;
+                color: #fff !important
+            } */
+        }
+    </style>
+
+    <!--[if (gte mso 9)|(IE)]>
+		<style type="text/css">
+			table {border-collapse: collapse !important;}
+		</style>
+	<![endif]-->
+
+</head>
+
+<body style="Margin:0;padding:0;min-width:100%;background-color:#dde0e1;">
+
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+         body {background-color:#dde0e1!important;}
+         body, table, td, p, a {font-family: sans-serif, Arial, Helvitica!important;}
+      </style>
+   <![endif]-->
+
+    <center style="width: 100%;table-layout: fixed;background-color:#dde0e1;padding-bottom: 40px;">
+        <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
+
+            <!-- Preheader (remove comment) -->
+            <div
+                style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
+                <!-- Add Preheader Text Here (85-100 characters in length) -->
+            </div>
+            <!-- End Preheader (remove comment) -->
+
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" style="border-spacing:0;color:#565656;" role="presentation">
+            <tr>
+            <td style="padding:0;">
+         <![endif]-->
+
+            <table align="center"
+                style="border-spacing:0;color:#565656;font-family: 'Lato', sans-serif, Arial, Helvitica!important;background-color: #fafdfe;Margin:0;padding:0;width: 100%;max-width: 600px;"
+                role="presentation">
+
+
+                <!-- START SOCIAL ICONS -->
+                <tr>
+                    <td style="padding: 0;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                                <td height="3" style="background-color: #0d4093;"></td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #0d4093;text-align: center;padding: 20px 0 20px 0;">
+
+                                    <a href="https://example.com" target="_blank">
+                                        <img src="http://findalawyer.okommerce.com/Content/uploads/logo.png"
+                                            alt="find-lawyer" title="find-lawyer" width="200" border="0">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="2" style="background-color: #0d4093;"></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; padding-top: 1rem">
+                                    <img src="http://findalawyer.okommerce.com/Content/uploads/success.png"
+                                        alt="payment-done">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center; padding-top: 1rem">
+                                    <p>Your Payment is Successfully Processed</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <p>Transaction ID : #@Model.ReadableOrderId</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- END SOCIAL ICONS -->
+
+                <!-- customer details -->
+                <tr>
+                    <td style="padding: 0;">
+                        <table width="100%" style="border-spacing: 0; background-color: #fafdfe;padding: 1rem 2rem"
+                            role="presentation">
+                            <tr>
+                                <td
+                                    style="text-align: left;border-bottom: 1px solid #d8d8d8;border-top: 1px solid #d8d8d8;padding: 1rem 0;">
+                                    Customer Name</td>
+                                <td
+                                    style="text-align: right;border-bottom: 1px solid #d8d8d8;border-top: 1px solid #d8d8d8;padding: 1rem 0;">
+                                    @Model.members.FullName</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">Phone
+                                    Number</td>
+                                <td style="text-align: right;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">
+                                    @Model.members.PhoneNumber</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">Customer
+                                    Email</td>
+                                <td style="text-align: right;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">
+                                    @Model.members.Email</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">Invoice
+                                    Status</td>
+                                <td style="text-align: right;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">Order
+                                    Placed</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">
+                                    Appointment Date and Time</td>
+                                <td style="text-align: right;border-bottom: 1px solid #d8d8d8;padding: 1rem 0;">
+                                    @Model.BookingDate (@Model.BookingTime)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- order details -->
+
+                <tr>
+                    <td style="padding: 0;">
+                        <table width="100%"
+                            style="border-spacing: 0; background-color: #fafdfe;padding: 1rem 2rem;text-align: center;"
+                            role="presentation">
+                            <tr>
+                                <td>
+                                    <h2>ORDER DETAILS</h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding: 0;">
+                        <table width="100%" class="bordered-table"
+                            style="border-spacing: 0; background-color: #fafdfe;padding: 1rem 2rem;"
+                            role="presentation">
+                            <tr style="text-align: center;">
+                                <td
+                                    style="border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    Service
+                                </td>
+                                <td
+                                    style="border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    Quantity</td>
+                                <td
+                                    style="border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    Price</td>
+                            </tr>
+                            <tr>
+                                <td
+                                    style="width: 250px;max-width: 150px;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    @*<img src="@Model.Details.Select(s=>s.BookingServices.Icon).FirstOrDefault()"
+                                        alt="booking_Image" style="max-height: 50px;max-width:50px;" />*@
+                                    <p>Service Taken : @Model.BookingServicesName</p>
+                                    <p>Service Type : @Model.BookingServiceType</p>
+                                    <p>Company Name : @Model.Company.Name</p>
+                                </td>
+                                <td
+                                    style="width: 100px;max-width: 150px;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    <p>QTY : @Model.Details.Select(s => s.BookingQuantity).FirstOrDefault()</p>
+                                </td>
+                                <td
+                                    style="width: 150px;max-width: 300px;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    <p>
+                                        <!-- U/P : AED @Model.Details.Select(s => s.BookingPrice).FirstOrDefault().ToString("N2") -->
+                                        u/p: AED 250000
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2"
+                                    style="text-align: left;border-right: none !important;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    Vat</td>
+                                <td
+                                    style="text-align: right;border-left: none !important;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    AED @Model.Vat.ToString("N2")</td>
+                            </tr>
+                            @*<tr>
+                                <td colspan="2"
+                                    style="text-align: left;border-right: none !important;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    Shipping</td>
+                                <td
+                                    style="text-align: right;border-left: none !important;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    AED @Model.ShippingPrice.ToString("N2")</td>
+                            </tr>*@
+                            <tr>
+                                <td colspan="2"
+                                    style="text-align: left;border-right: none !important;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    TOTAL PAID :</td>
+                                <td
+                                    style="text-align: right;border-left: none !important;border-spacing: 0;border: 1px solid #d8d8d8;padding: 1rem 1rem;word-break: break-all;">
+                                    AED @Model.GrandTotal.ToString("N2")</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- START FOOTER -->
+                <tr>
+                    <td style="padding: 0;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                                <td class="footer"
+                                    style="text-align: center;font-size: 16px;width: 300px;background-color: #0d4093;">
+                                    <p class="call-us"
+                                        style="background-color: #ffffff;margin: 1rem;padding: 1rem 1.5rem;border-radius: 6px;">
+                                        Call Us +9910000 00000</p>
+                                </td>
+                                <td class="footer"
+                                    style="text-align: center;font-size: 16px;width: 300px;background-color: #0d4093;">
+                                    <p
+                                        style="background-color: #ffffff;margin: 1rem;padding: 1rem 1.5rem;border-radius: 6px;">
+                                        Mail us: info@findlawyer.com</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                <!-- END FOOTER -->
+
+
+            </table>
+
+            <!--[if (gte mso 9)|(IE)]>
+         </td>
+         </tr>
+         </table>
+         <![endif]-->
+
+
+        </div>
+    </center>
+
+</body>
+
+</html>
