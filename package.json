@@ -1,0 +1,15 @@
+{
+  "name": "find_lawyer",
+  "version": "1.0.0",
+  "description": "company template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"sass --watch sass:content/css"
+  },
+  "keywords": [
+    "find_lawyer"
+  ],
+  "author": "royex.ae",
+  "license": "ISC"
+}

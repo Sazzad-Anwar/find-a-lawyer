@@ -1,0 +1,259 @@
+.menu-big-icon{
+  position: absolute;
+  top:40px;
+  left:50px;
+  img{
+    max-height:25px;
+  }
+}
+
+.page{
+  .header-wrapper{
+    background-image: url(../images/bg_head.jpg);
+    background-size:cover;
+    background-position: top center;
+    *{
+      color:#fff;
+    }
+  }
+}
+
+.logo-big,
+.logo-medium{
+  display:none;
+}
+
+
+
+.header{
+  //position: fixed;
+  //top:0;
+  //right:0;
+  ////bottom:0;
+  //left:0;
+  //position: fixed;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 99;
+
+  &.sticked{
+
+    .logo-big{
+      display:none;
+    }
+    .logo-medium{
+      display:none;
+    }
+
+    .header-wrapper{
+      background:#fff!important;
+      box-shadow:0 2px 3px 0 rgba(0, 0, 0, 0.05);
+      .navbar{
+        .nav-link{
+          color:#202020;
+        }
+      }
+    }
+
+    .navbar{
+      &-toggler{
+        i{
+          color:#000!important;
+        }
+      }
+    }
+
+  }
+
+  &.page{
+    .header-wrapper{
+      background-image: url(../images/bg_head.jpg);
+      background-size:cover;
+      background-position: top center;
+    *{
+      color:#fff;
+    }
+    }
+  }
+
+  &-wrapper{
+    position: relative;
+    transition: background 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+    background: rgba(255, 255, 255, 0);
+
+    &:after{
+      content:'';
+      position: absolute;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.3)),to(transparent));
+      background: -webkit-linear-gradient(rgba(0,0,0,.3),transparent);
+      background: -moz-linear-gradient(rgba(0,0,0,.3),transparent);
+      background: linear-gradient(rgba(0,0,0,.3),transparent);
+      //max-height: 100px;
+      z-index: -1;
+    }
+  }
+
+
+}
+
+.navbar{
+  .nav-link{
+    color:#fff;
+    position: relative;
+    &:after{
+      content:'';
+      position: absolute;
+      left:0;
+      right:0;
+      height:0.1rem;
+      background: $primary-orange;
+      bottom:-6px;
+      margin:0 15px;
+      transition: 0.3s all ease;
+      opacity: 0;
+    }
+    &:hover,&.active{
+      &:after{
+        opacity:1;
+      }
+    }
+  }
+  padding:15px 0;
+
+  &-brand{
+    padding:0;
+  }
+
+
+}
+
+.inner-page{
+  .header{
+    background-image: url(../images/bg_header.jpg);
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size:cover;
+  }
+}
+
+@media (min-width:576px){
+  .logo-mobile{
+    display:none;
+  }
+  .logo-medium{
+    display:block;
+  }
+  .logo-black{
+    display:none;
+  }
+}
+
+@media(min-width:992px){
+  .navbar-collapse{
+    flex-grow:inherit;
+  }
+  .navbar-nav{
+    margin-top:15px;
+
+    .nav-item{
+      &:first-child{
+        .nav-link{
+          padding-left:0;
+        }
+      }
+      &:last-child{
+        .nav-link{
+          padding-right:0;
+        }
+      }
+    }
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding:0 20px;
+    &:after{
+      margin:0 20px;
+    }
+  }
+  .navbar{
+    .btn-contact{
+      margin:0 0 0 20px;
+    }
+  }
+
+  .logo-black{
+    display:none;
+  }
+  .header{
+    &.sticked{
+      .logo-white{
+        display:none;
+      }
+      .logo-black{
+        display:block;
+        &.logo-big,
+        &.logo-mobile{
+          display:none;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width:1600px){
+  .navbar{
+    padding:25px 0;
+  }
+  .logo-medium{
+    display:none;
+  }
+  .logo-big{
+    display:block;
+  }
+  .logo-black{
+    display:none;
+  }
+
+  .header{
+    &.sticked{
+      .logo-white{
+        display:none;
+      }
+      .logo-black{
+        display:block;
+        &.logo-big{
+          display:block;
+        }
+        &.logo-medium,
+        &.logo-mobile{
+          display:none;
+        }
+      }
+    }
+  }
+
+
+}
+
+//01/12/2020
+.item-social{
+  display: flex;
+  align-items: center;
+  padding-left:30px;
+  a{
+    color:#fff;
+    padding:0 10px;
+    &:first-child{
+      padding-left:0;
+    }
+    &:last-child{
+      padding-right:0;
+    }
+  }
+}

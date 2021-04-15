@@ -1,0 +1,216 @@
+/*===================
+body
+===================*/
+body{
+  //overflow-y:hidden;
+}
+p{
+  //line-height: 28px;
+}
+h2,h3{
+  font-weight: $semiBold;
+}
+
+.wow{
+  visibility:hidden;
+}
+
+.title-divider{
+  position: relative;
+  display: inline-block!important;
+  &:after{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: rgba(221, 221, 221, 0.35);
+    position: absolute;
+    left: -85px;
+    top: -8px;
+  }
+  &:before{
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #b92228;
+    border-radius: 50%;
+    position: absolute;
+    left: -88px;
+    top: -11px;
+    z-index: 9;
+  }
+}
+
+
+.section{
+  padding:80px 0;
+  position: relative;
+}
+.bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.overlay-blue{
+  background-color: rgba(32, 145, 235, 0.77);
+}
+
+.input-group{
+  &.download-link-field{
+    .input-group-prepend{
+      .input-group-text{
+        background-color: #fff;
+        padding-right:0px;
+        border:0;
+      }
+    }
+    select{
+      height:auto;
+      border:0;
+      background-color:#fff;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    input.form-control{
+      height:auto;
+      padding-left:0;
+      border:0;
+    }
+    .input-group-append{
+      .input-group-text{
+        border-color:#000;
+        background-color: #000;
+        color:#fff;
+        padding-left:25px;
+        padding-right:25px;
+      }
+    }
+    .input-group-text{
+      padding-top:8px;
+      padding-bottom:8px;
+    }
+
+  }
+  .input-group-text{
+    border-radius:10px;
+  }
+}
+.btn-holder{
+  a,button{
+    margin-right:10px;
+    &:last-child{
+      margin:0;
+    }
+  }
+}
+
+.social-nav{
+  list-style: none;
+  li{
+    a{
+
+    }
+  }
+}
+
+/*===================
+BANNER
+===================*/
+.banner{
+  position: relative;
+  .banner-layer{
+    &-holder{
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      display: flex;
+      align-items: flex-end;
+    }
+    position: relative;
+    z-index: 99;
+    margin-bottom:-200px;
+  }
+
+}
+
+.image{
+  img{
+
+  }
+  &.img-cover{
+    img{
+      object-fit: cover;
+    }
+  }
+}
+.img-radius-10{
+  border-radius:10px;
+}
+
+.img-shadow{
+  box-shadow:0 0 15px rgba(0, 0, 0, 0.40);
+}
+
+/*===================
+about app
+===================*/
+
+
+
+
+
+/*===================
+FEATURES
+===================*/
+.service-box{
+  text-align: center;
+  .icon-box{
+    background-color: #fff;
+    border-radius:10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    width:130px;
+    height:130px;
+    margin:0 auto;
+    img{
+      max-width:80%;
+      max-height:80%;
+    }
+  }
+}
+
+
+
+/*===================
+DOWNLOAD APP
+===================*/
+.section-download{
+  padding-bottom:0;
+  .download-left{
+    padding-bottom:80px;
+  }
+
+  &.bg-less{
+    .input-group-prepend{
+      border: 1px solid #ddd;
+      border-radius: 10px 0 0 10px;
+    }
+    input.form-control{
+      border:1px solid #ddd;
+      border-left:0;
+      border-right:0;
+    }
+  }
+}
+
+
+
+
+/*===================
+section section
+===================*/

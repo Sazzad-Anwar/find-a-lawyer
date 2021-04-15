@@ -1,0 +1,38 @@
+#fp-nav,.fp-slidesNav{
+  ul{
+    li{
+      a{
+        span{
+          width:10px;
+          height:10px;
+          background:transparent;
+          border: 1.5px solid #5f5a56;
+          transform:translate(-50%, -50%);
+          margin:0;
+        }
+
+        &.active{
+          span{
+            background:$primary-red;
+            border-color:$primary-red;
+            margin:0;
+          }
+        }
+      }
+
+      &:hover{
+        a{
+          span{
+            margin:0;
+          }
+
+          &.active{
+            span{
+              margin:0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

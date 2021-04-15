@@ -1,0 +1,131 @@
+/*screen larger than mobile devices*/
+
+@media (min-width: 1600px){
+  .container{
+    max-width:1400px;
+  }
+}
+
+
+@media(min-width:1200px){
+
+}
+
+@media (min-width:992px){
+
+  .resources{
+    &-sidebar{
+      float:left;
+      top:85px;
+
+      &-head{
+        //display:none;
+        .show-list{
+          display: none;
+        }
+      }
+
+      width:300px;
+      min-width:300px;
+      max-width:300px;
+      visibility: visible;
+      .sidebar-menu{
+        display: block;
+        padding:0;
+        box-shadow:none;
+      }
+    }
+
+    &-body{
+      margin-top:0;
+      float:left;
+      width:calc(100% - 300px);
+      padding-left:30px;
+      min-height:650px;
+    }
+  }
+}
+
+@media (min-width:768px){
+
+}
+
+
+@media(min-width:576px){
+  .large-scale{
+    .image-holder{
+      margin-top:6px;
+      .image{
+        height:calc(100% - 15px);
+        padding-bottom:0;
+      }
+    }
+    .enterprise-content{
+      margin-top:0;
+    }
+  }
+}
+
+@media(min-width:1900px){
+}
+
+@media (max-width:1500px){
+  .font-26{
+    font-size:22px;
+  }
+  .font-18{
+    font-size:14px;
+  }
+  .font-24{
+    font-size:20px;
+  }
+  .font-15{
+    font-size:13px;
+  }
+}
+
+@media (max-width:1199px){
+
+}
+
+@media (max-width:991px){
+
+}
+
+@media (min-width:768px)  and (max-width:1024px) {
+
+}
+
+@media (min-width:768px)  and (max-width:1024px) and (orientation: portrait){
+
+}
+
+/*screen larger than mobile devices*/
+
+
+
+/*query for mobile devices*/
+@media (max-width:767px) {
+
+}
+
+@media (min-width:576px) and (max-width:767px){
+
+}
+/*query for mobile devices*/
+
+/*small devices*/
+@media (max-width:575px){
+
+}
+
+@media (max-width:479px){
+}
+
+@media(max-width:460px){
+}
+
+@media (max-width:379px){
+
+}
+/*small devices*/

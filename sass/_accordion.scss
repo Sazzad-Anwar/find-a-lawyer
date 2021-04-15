@@ -1,0 +1,10 @@
+.ac{
+  &:focus{
+    outline:0;
+  }
+  &-q{
+    &:focus{
+      outline: none;
+    }
+  }
+}
